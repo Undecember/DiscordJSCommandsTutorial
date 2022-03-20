@@ -1,0 +1,33 @@
+{
+    "commands": [
+        {
+            "GuildId": "guild id here('global' if it's global)",
+            "permissions": [
+                {
+                    "id": "id here",
+                    "type": "USER",
+                    "permission": true
+                },
+                {
+                    "id": "id here",
+                    "type": "ROLE",
+                    "permission": true
+                }
+            ],
+            "data": {
+                "name": "slowmode",
+                "type": 1,
+                "description": "슬로우모드를 설정합니다",
+                "options": [
+                    {
+                        "name": "seconds",
+                        "type": "INTEGER",
+                        "description": "시간",
+                        "required": true
+                    }
+                ],
+                "defaultPermission": false
+            }
+        }
+    ]
+}
